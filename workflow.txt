@@ -1,0 +1,37 @@
+Git Workflow for TaskApp
+
+1. Initialize the repository
+   git init
+
+2. Check the current status of files
+   git status
+
+3. Stage files for commit
+   git add .
+
+4. Commit staged files with a message
+   git commit -m "Initial commit - TaskApp setup"
+
+5. Rename the default branch to main
+   git branch -M main
+
+6. Add remote GitHub repository
+   git remote add origin https://github.com/Myles-O/TaskApp-myles.git
+
+7. Push local commits to GitHub
+   git push -u origin main
+
+8. Make changes to code
+   (edit PHP files, test locally)
+
+9. Stage and commit updates
+   git add .
+   git commit -m "Describe what was changed"
+
+10. Push changes to GitHub again
+    git push
+
+
+- composer.json and composer.lock are included to record dependencies.
+- vendor/ is committed so PHPMailer is available without extra setup.
+- Database setup is done in HeidiSQL (MariaDB).
